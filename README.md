@@ -20,6 +20,12 @@
 ---
 
 ## 🚀 Deployment
+### Option 0: Pairing
+
+1. Open [Pairer](https://midknightmantra-pair.onrender.com/)
+2. Scan QR (working) or Enter phone number for pair code(not working)
+3. Copy the session id sent to your dm
+4. Paste in .env or in variables or in app.json
 
 ### Option 1: Railway (Recommended)
 
