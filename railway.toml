@@ -1,0 +1,9 @@
+[build]
+builder = "DOCKERFILE"
+
+[deploy]
+startCommand = "node index.js"
+restartPolicyType = "ON_FAILURE"
+healthcheckPath = "/"
+healthcheckTimeout = 100
+numReplicas = 1

@@ -1,0 +1,68 @@
+{
+    "name": "Midknight Bot",
+    "description": "A powerful, intelligent WhatsApp bot with AI, Database (Mongo/Postgres), and Media features.",
+    "keywords": [
+        "whatsapp",
+        "bot",
+        "node",
+        "ai",
+        "midknight",
+        "baileys"
+    ],
+    "repository": "https://github.com/MidKnightMantra/Midknight",
+    "logo": "https://telegra.ph/file/3d4c1984.png",
+    "success_url": "https://github.com/MidKnightMantra/Midknight",
+    "stack": "container",
+    "env": {
+        "SESSION_ID": {
+            "description": "Your Session ID (Vesperr~...)",
+            "required": true
+        },
+        "OWNER_NUMBER": {
+            "description": "Your Phone Number (e.g. 254700000000)",
+            "required": true
+        },
+        "BOT_NAME": {
+            "description": "Name of your bot",
+            "value": "Midknight",
+            "required": false
+        },
+        "PREFIX": {
+            "description": "Command Prefix",
+            "value": ".",
+            "required": false
+        },
+        "MONGO_URL": {
+            "description": "MongoDB Connection String (Optional - for advanced DB)",
+            "required": false
+        },
+        "POSTGRES_URL": {
+            "description": "PostgreSQL Connection String (Optional - for advanced DB)",
+            "required": false
+        },
+        "AUTO_JOIN_GROUP": {
+            "description": "Link/Code for Support Group to join on start",
+            "required": false
+        },
+        "AUTO_FOLLOW_CHANNEL": {
+            "description": "Link/Code for Channel to follow on start",
+            "required": false
+        },
+        "OPENAI_API_KEY": {
+            "description": "OpenAI Key for Tier-1 AI features",
+            "required": false
+        },
+        "GEMINI_API_KEY": {
+            "description": "Google Gemini Key for Vision AI",
+            "required": false
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        },
+        {
+            "url": "heroku/nodejs"
+        }
+    ]
+}
