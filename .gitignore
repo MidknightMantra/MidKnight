@@ -1,0 +1,45 @@
+# Dependencies
+node_modules/
+
+# Session data (never commit this!)
+session/
+auth_info*/
+creds.json
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Database
+database/
+*.json.tmp
+
+# Logs & Output
+logs/
+*.log
+npm-debug.log*
+out.txt
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build artifacts
+dist/
+build/
+
+# Temp files
+tmp/
+temp/
+*.tmp
+
+# Coverage
+coverage/
+.nyc_output/
